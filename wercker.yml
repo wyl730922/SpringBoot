@@ -1,4 +1,4 @@
-box: maven
+box: library/maven
 build:
     Steps:
      # Build Spring Boot application
