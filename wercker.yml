@@ -16,4 +16,4 @@ push:
              repository: $DOCKER_REPOSITORY
              #registry: https://registry.hub.docker.com
              # cmd: mvn spring-boot:run
-             cmd: java -jar/pipeline/source/target/myproject-0.0.1-SNAPSHOT.jar
+             cmd: java -jar /pipeline/source/target/myproject-0.0.1-SNAPSHOT.jar
