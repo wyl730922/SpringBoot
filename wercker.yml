@@ -4,7 +4,7 @@ build:
      # Build Spring Boot application
      - script:
          name: Spring Boot Applicaiton Build
-         code: maven build
+         code: mvn build
          
 push:
     steps:
