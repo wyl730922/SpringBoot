@@ -1,4 +1,4 @@
-box: maven
+box: maven:jdk-10-slim
 build:
     Steps:
      # Build Spring Boot application
