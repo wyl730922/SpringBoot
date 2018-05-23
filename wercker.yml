@@ -15,4 +15,4 @@ push:
          tag: latest
          repository: $DOCKER_REPOSITORY
          #registry: https://registry.hub.docker.com
-cmd: mvn spring-boot:run
+         cmd: mvn spring-boot:run
