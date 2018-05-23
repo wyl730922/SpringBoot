@@ -1,0 +1,18 @@
+box:maven/jdk-10-slim
+build:
+    Steps:
+     # Build Spring Boot application
+     - script:
+         name: Spring Boot Applicaiton Build
+         code: maven build
+         
+push:
+    steps:
+         # Push to public docker repo
+         - internal/docker-push:
+         username: $DOCKER_USERNAME
+         password: $DOCKER_PASSWORD
+         tag: latest
+         repository: $DOCKER_REPOSITORY
+         #registry: https://registry.hub.docker.com
+         cmd: mvn spring-boot:run
